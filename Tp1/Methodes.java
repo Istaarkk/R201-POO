@@ -20,8 +20,8 @@ public class Methodes {
     }
 
     public static void modifierTableau(float[] tableau) {
-        System.out.println("Pendant l'appel : tableau[0] = " + tableau[0]);
+        System.out.println("Pendant l'appel tableau[0] = " + tableau[0]);
         tableau[0] = 150.7f;
-        System.out.println("Pendant l'appel : tableau[0] = " + tableau[0]);
+        System.out.println("Pendant l'appel tableau[0] = " + tableau[0]);
     }
 }

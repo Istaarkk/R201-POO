@@ -21,8 +21,14 @@ public class Stock {
         //---------------------------------------
         // Mettre des valeurs dans les cases
         //---------------------------------------
-        // ...
-
+        codesArticles[0] = 1;
+        codesArticles[1] = 1;
+        codesArticles[2] = 1;
+        
+        prixArticles[0] = 2;
+        prixArticles[1] = 4;
+        prixArticles[2] = 3;
+        		
         //---------------------------------------
         // Parcours des deux tableaux avec deux boucles foreach
         //---------------------------------------

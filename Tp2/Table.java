@@ -1,5 +1,6 @@
 public class Table {
 
+	static final String NOIR = "Noir";
     int nbPieds;
     String couleur;
     float prix;
@@ -43,7 +44,7 @@ public class Table {
     	System.out.println (t2.prix);
     	System.out.println ();
     	
-    	Table t3 = new Table(6,"NOIR");
+    	Table t3 = new Table(6,Table.NOIR);
         System.out.println(t3.nbPieds);
         System.out.println(t3.couleur);
         System.out.println(t3.prix);
@@ -81,4 +82,3 @@ public class Table {
         }
 	}   	 
   }
-

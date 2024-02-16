@@ -1,4 +1,3 @@
-package streaming;
 import java.util.Scanner;
 
 class Video {

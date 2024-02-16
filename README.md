@@ -5,13 +5,13 @@ Ce dépôt GitHub contient l'ensemble des exercices de programmation orientée o
 
 ## Structure du Répertoire
 
-- **Exercice_1/**
+- **TP_1/**
   - Contient les fichiers liés à l'exercice 1.
   - `Main.java`: Code source principal.
   - `Enonce.pdf`: Énoncé de l'exercice.
   - ...
 
-- **Exercice_2/**
+- **TP_2/**
   - Contient les fichiers liés à l'exercice 2.
   - `Main.java`: Code source principal.
   - `Enonce.pdf`: Énoncé de l'exercice.

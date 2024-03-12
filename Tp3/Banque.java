@@ -9,7 +9,10 @@ public class Banque {
 	private int nbComptes ;
 	private Client[] sesClients;
 	private int nbClients ;
-
+	private int  nbComptesCourants;
+	private static double tauxRemuneration = 0.02; 
+	
+	
 	public Banque(String nom) {
 		sesComptesCourants = new CompteCourant[NB_MAX_COMPTES];
 		sesClients = new Client[NB_MAX_CLIENTS];
@@ -28,6 +31,48 @@ public class Banque {
 
 		compte.setSaBanque(this);
 	}
+	
+	
+	void afficherProprietaireCompteNumero (int numeroCompte) {
+		for (int i = 0 ; i < nbComptesCourants ; i++ )
+			if (sesComptesCourants[i].getNumcompte() == numeroCompte)
+				sesComptesCourants[i].getProprietaire().afficher();
+	}
+	
+
+		/* Q5 : Dans le main() de la classe Banque, essayez de modifier le solde de ces comptes en accédant directement à leurs attributs. 
+				 CptDurand.solde = 2000 ;
+				 CptPetit.solde = 1000;
+				 Est-ce possible ? non ça ne l'est pas 
+				 Est-ce une erreur de compilation ou d’exécution ?  c'est une erreur de compilation
+				 Quel est le message d’erreur ? " is not visible"*/
+	 
+	 //Q8
+	 void afficher () {
+			System.out.println ("\t Comptes courants:" );
+			for (int i = 0 ; i < nbComptesCourants ; i++ )
+				sesComptesCourants[i].afficher ();
+		}
+		
+	 
+	void afficherComptesClientNom (String nomClient) {
+		for (int i = 0 ; i < nbClients ; i++ )
+			if (sesClients[i].getNom().equals(nomClient))
+					sesClients[i].afficher();
+		
+	 }
+	
+	public static double getTauxRemuneration() {
+		return tauxRemuneration;
+	}
+	 
+	 
+	 /*public String toString () {
+		  String s =  ;
+		  s = s + attribut ;
+		  …
+		  return s ;
+		}*/
 	
 	
 	
@@ -57,35 +102,13 @@ public class Banque {
 		B1.ajouterCompte(CptPetit);
 		B1.ajouterCompte(CptPetit2);
 		
-		// Q5 : Dans le main() de la classe Banque, essayez de modifier le solde de ces comptes en accédant directement à leurs attributs. 
-				// CptDurand.solde = 2000 ;
-				//CptPetit.solde = 1000;
-				// Est-ce possible ? non ça ne l'est pas 
-				// Est-ce une erreur de compilation ou d’exécution ?  c'est une erreur de compilation
-				// Quel est le message d’erreur ? " is not visible"
-	 
-	 //Q8
-		for(CompteCourant Compte : sesComptesCourants) {
-			if (Compte != null) {
-				System.out.println(Compte.afficher());
-			}
-			
-		}
-		
-		void afficherComptesClientNom (String nomClient) {
-			for (int i = 0 ; i < nbClients ; i++ )
+	
+		Petit.afficher();
+		Petit.crediter(1000);
+		Petit.afficher();
+		Petit.crediter(1000);
+		Petit.afficher();
 				
-				if (sesClients[i].getNom().equals(nomClient))
-
-					sesClients[i].afficher();
-		
 	 }
-	 
-	 
-	 /*public String toString () {
-		  String s =  ;
-		  s = s + attribut ;
-		  …
-		  return s ;
-		}*/
+		
 }

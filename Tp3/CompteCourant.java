@@ -7,12 +7,17 @@ public class CompteCourant {
 	private double seuil;
 	private double solde;
 	private Client proprietaire;
+	private static int nbCompteCourants = 0 ;
 	
 	
 	public CompteCourant(int numcompte,int seuil,int solde){
 		this.numcompte = numcompte;
 		this.seuil = seuil;
 		this.solde = solde;
+	}
+	
+	public String toString () {
+		return "Compte Courant : no = " +  numcompte + ", solde = " + solde;
 	}
 
 	public void crediter(double montant) {
@@ -80,4 +85,6 @@ public class CompteCourant {
 							"solde = " + solde);
 
 	}
+
+	
 }

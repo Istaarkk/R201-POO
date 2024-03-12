@@ -10,6 +10,8 @@ public class Client {
 	private CompteCourant [] sesCompteCourants;
 	private int nbComptes = 0;
 	private int numero;
+	private CompteEpargne[] sesComptesEpargne;
+	private int nbComptesEpargne ;
 	
 	
 	public Client(int numclient,String nom,String adresse){
@@ -30,6 +32,13 @@ public class Client {
 		 
 		 
 	 }
+	 
+	 public void ajouterCompteEpargne(CompteEpargne compte) {
+			sesComptesEpargne[nbComptesEpargne] = compte ;
+			nbComptesEpargne++ ;
+			
+			compte.setProprietaire(this);
+		}
 	 
 		public void setSaBanque(Banque banque) {
 			this.saBanque = banque ;
@@ -71,4 +80,6 @@ public class Client {
 			
 				sesCompteCourants[i].afficher ();
 		}
+
+		
 }

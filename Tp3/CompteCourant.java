@@ -20,8 +20,8 @@ public class CompteCourant {
 		return "Compte Courant : no = " +  numcompte + ", solde = " + solde;
 	}
 
-	public void crediter(double montant) {
-		solde +=montant; 
+	void crediter (double montant) {
+		solde = solde + montant + montant * Banque.getTauxRemuneration();
 	}
 
 	public void debiter(double montant) {

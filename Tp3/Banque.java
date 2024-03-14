@@ -14,6 +14,7 @@ public class Banque {
 	
 	
 	public Banque(String nom) {
+		this.nom = nom;
 		sesComptesCourants = new CompteCourant[NB_MAX_COMPTES];
 		sesClients = new Client[NB_MAX_CLIENTS];
 	}
@@ -67,12 +68,12 @@ public class Banque {
 	}
 	 
 	 
-	 /*public String toString () {
-		  String s =  ;
-		  s = s + attribut ;
-		  …
+	 public String toString () {
+		  String s = " " ;
+		  s = s +  "Num compte";
 		  return s ;
-		}*/
+		  }
+		
 	
 	
 	
@@ -103,12 +104,13 @@ public class Banque {
 		B1.ajouterCompte(CptPetit2);
 		
 	
-		Petit.afficher();
-		Petit.crediter(1000);
-		Petit.afficher();
-		Petit.crediter(1000);
-		Petit.afficher();
+		CptPetit.afficher();
+		CptPetit.crediter(1000);
+		CptPetit.afficher();
+		CptPetit.crediter(1000);
+		CptPetit.afficher();
 				
 	 }
+	 
 		
 }

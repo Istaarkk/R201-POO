@@ -1,7 +1,7 @@
 package banque;
 
 public class Banque {
-
+	
 	final static int NB_MAX_COMPTES = 1000 ; 
 	final static int NB_MAX_CLIENTS = 1000 ; 
 	private String nom;
@@ -41,7 +41,7 @@ public class Banque {
 	}
 	
 
-		/* Q5 : Dans le main() de la classe Banque, essayez de modifier le solde de ces comptes en accédant directement à leurs attributs. 
+		/* Q5 : Dans le main de la classe Banque, essayez de modifier le solde de ces comptes en accédant directement à leurs attributs. 
 				 CptDurand.solde = 2000 ;
 				 CptPetit.solde = 1000;
 				 Est-ce possible ? non ça ne l'est pas 

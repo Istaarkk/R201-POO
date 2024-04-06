@@ -1,6 +1,6 @@
 
 public class Magasin {
-
+	//déclaration des constantes
 	 static final int NB_MAX = 10; 
 	 static final String NOIR ="Noir";
 	 

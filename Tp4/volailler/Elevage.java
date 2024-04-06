@@ -16,7 +16,7 @@ class Elevage{
 	}
 	
 	void ecrire(){
-		for (int i=0; i<nbBetes; i++){
+		for (int i=0; i<nbBetes; ++i){
 			System.out.println(
 					volailles[i].identifiant + " " +
 					volailles[i].poids + " " + 

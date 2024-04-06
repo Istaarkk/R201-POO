@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class AfficherSaisir {
     public static void main(String[] args) {
-        // Afficher "Bonjour"
+        // Afficher "Bonjour dans la console"
         System.out.println("Bonjour");
 
      // Afficher le nombre pi avec 3 chiffres après la virgule

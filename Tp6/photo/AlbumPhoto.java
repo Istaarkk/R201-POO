@@ -24,12 +24,6 @@ public class AlbumPhoto implements EnsemblePhotos {
 			if (p.getCommentaire().contains(motCle))
 		    	   result.add (p);
 		return result;
-		/*Iterator it = album.iterator();
-		while (it.hasNext()) {
-		       Photo p = (Photo) (it.next());
-		       if (p.getCommentaire().contains(motCle))
-		    	   result.add (p);
-		}*/
 	}
 
 	

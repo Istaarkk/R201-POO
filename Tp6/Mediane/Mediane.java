@@ -11,7 +11,7 @@ class Mediane {
 		mmPaire.setV1 (10); 
 		mmPaire.setV2 (20); 
 
-		System.out.println ("Valeur mediane pour une paire : " + med.mediane (mmPaire)); 
+		System.out.println ("Valeur mediane pour une pair : " + med.mediane (mmPaire)); 
 
 		MinMaxTriplet mmTriplet = new MinMaxTriplet();
 		mmTriplet.setV1 (10); 

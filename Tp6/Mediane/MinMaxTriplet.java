@@ -1,31 +1,31 @@
 public class MinMaxTriplet
 implements MinMax {
-	int v1 ;
-	int v2 ;
-	int v3 ;
+	int valeur1 ;
+	int valeur2 ;
+	int valeur3 ;
 
 	public int minimum() {
-		return(Math.min(Math.min(v1,v2),v3)) ;
+		return(Math.min(Math.min(valeur1,valeur2),valeur3)) ;
 	}
 
 	public int maximum() {
-		return(Math.max(Math.max(v1,v2),v3)) ;
+		return(Math.max(Math.max(valeur1,valeur2),valeur3)) ;
 	}
 
-	public int getV1() {
-		return v1;
+	public int getValeur1() {
+		return valeur1;
 	}
 
-	public void setV1(int v1) {
-		this.v1 = v1;
+	public void setValeur1(int valeur1) {
+		this.valeur1 = valeur1;
 	}
 
-	public int getV2() {
-		return v2;
+	public int getValeur2() {
+		return valeur2;
 	}
 
-	public void setV2(int v2) {
-		this.v2 = v2;
+	public void setV2(int valeur2) {
+		this.valeur2 = valeur2;
 	}
 
 	public int getV3() {

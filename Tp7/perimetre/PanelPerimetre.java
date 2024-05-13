@@ -1,3 +1,4 @@
+package perimetre;
 import javax.swing.*;
 
 public class PanelPerimetre extends JPanel {
